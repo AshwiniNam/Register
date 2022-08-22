@@ -37,5 +37,14 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        TextView createnewacc = (TextView)findViewById(R.id.createanewaccount);
+        createnewacc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,login.class);
+                startActivity(intent);
+            }
+        });
     }
 }
