@@ -1,41 +1,340 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:orientation="vertical"
     android:background="@drawable/rose"
     tools:context=".Form">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/register"
-        android:text="Register"
-        android:textColor="@color/black"
-        android:textSize="35dp"
-        android:layout_margin="50dp"
-        android:fontFamily="serif-monospace"
-        android:textStyle="bold"
-        android:gravity="center" />
+        android:id="@+id/formname"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_weight="0.5"
+            android:text="First Name">
+        </TextView>
 
-    <TextView
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter first name"
+            android:fontFamily="serif-monospace"
+            android:layout_weight="0.5"
+            android:textStyle="bold"
+            android:padding="10dp">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/register"
-        android:id="@+id/name"
-        android:text="Name"
-        android:textColor="@color/black"
-        android:textSize="25dp"
-        android:layout_margin="50dp"
-        android:fontFamily="serif-monospace"
-        android:textStyle="bold"
-        android:gravity="left" />
+        android:id="@+id/formsecondname"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_weight="0.5"
+            android:text="Second Name">
+        </TextView>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter second name"
+            android:fontFamily="serif-monospace"
+            android:layout_weight="0.5"
+            android:textStyle="bold"
+            android:padding="10dp">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_weight="0.5"
+            android:text="Email">
+        </TextView>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter email id"
+            android:fontFamily="serif-monospace"
+            android:layout_weight="0.5"
+            android:textStyle="bold"
+            android:padding="10dp">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dob"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_weight="0.5"
+            android:text="Date of Birth">
+        </TextView>
+
+        <CalendarView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+        </CalendarView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/housenum"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_weight="0.5"
+            android:text="House Number">
+        </TextView>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter house number"
+            android:fontFamily="serif-monospace"
+            android:layout_weight="0.5"
+            android:textStyle="bold"
+            android:padding="10dp">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/block"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_weight="0.5"
+            android:text="Block">
+        </TextView>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter block no"
+            android:fontFamily="serif-monospace"
+            android:layout_weight="0.5"
+            android:textStyle="bold"
+            android:padding="10dp">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/municipality"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_weight="0.5"
+            android:text="Municipality">
+        </TextView>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter municipality"
+            android:fontFamily="serif-monospace"
+            android:layout_weight="0.5"
+            android:textStyle="bold"
+            android:padding="10dp">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/area"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_weight="0.5"
+            android:text="Area">
+        </TextView>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="in acres"
+            android:fontFamily="serif-monospace"
+            android:layout_weight="0.5"
+            android:textStyle="bold"
+            android:padding="10dp">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/occupation"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_weight="0.5"
+            android:text="Occupation">
+        </TextView>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter occupation"
+            android:fontFamily="serif-monospace"
+            android:layout_weight="0.5"
+            android:textStyle="bold"
+            android:padding="10dp">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/income"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_weight="0.5"
+            android:text="Annual Income">
+        </TextView>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Annual income in lakhs"
+            android:fontFamily="serif-monospace"
+            android:layout_weight="0.5"
+            android:textStyle="bold"
+            android:padding="10dp">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/curradd"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_weight="0.5"
+            android:text="Current Address">
+        </TextView>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter current address"
+            android:fontFamily="serif-monospace"
+            android:layout_weight="0.5"
+            android:textStyle="bold"
+            android:padding="10dp">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/members"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_weight="0.5"
+            android:text="Family Members">
+        </TextView>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter number of family members"
+            android:fontFamily="serif-monospace"
+            android:layout_weight="0.5"
+            android:textStyle="bold"
+            android:padding="10dp">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/savebutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:background="@color/teal_200"
+            android:fontFamily="serif-monospace"
+            android:text="Save"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
 
 
 
-</RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
