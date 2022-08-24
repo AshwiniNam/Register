@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 import com.google.android.material.button.MaterialButton;
 
@@ -18,6 +19,15 @@ public class login extends AppCompatActivity {
 
         MaterialButton signinbutton = (MaterialButton) findViewById(R.id.signupbutton);
         signinbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(login.this,MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        TextView alreadyamem = (TextView)findViewById(R.id.alreadyamember);
+        alreadyamem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(login.this,MainActivity.class);
