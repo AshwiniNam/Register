@@ -13,7 +13,8 @@ The user can login using the credentials
 
 If the credentials match, the user is redirected to the survey form
 Page 3: Survey Form 
-![survey form](https://user-images.githubusercontent.com/60285499/186341873-6c1ec293-a459-4f2e-8010-29022935c428.png)
+![survey form](https://user-images.githubusercontent.com/60285499/186343936-c2a8545e-3b4f-4a5c-a066-cd4d14458c02.png)
+
 
 Once the user enters the data and clicks save button, thankyou page appears
 Page 4: Thank you
