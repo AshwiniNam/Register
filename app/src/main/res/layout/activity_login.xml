@@ -108,6 +108,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/alreadyamember"
         android:layout_below="@id/signupbutton"
+        android:clickable="true"
         android:text="Already a member? Login"
         android:layout_centerHorizontal="true"
         android:fontFamily="serif-monospace"

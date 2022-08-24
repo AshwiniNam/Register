@@ -2,6 +2,7 @@ package com.example.register;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -19,6 +20,8 @@ public class Form extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(Form.this, "Data Saved", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(Form.this,Thankyou.class);
+                startActivity(intent);
             }
         });
     }

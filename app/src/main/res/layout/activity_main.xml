@@ -80,23 +80,13 @@
         android:textColor="@color/black"
         android:textStyle="bold" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/forgotpassword"
-        android:layout_below="@id/loginbutton"
-        android:text="Forgot Password"
-        android:clickable="true"
-        android:layout_centerHorizontal="true"
-        android:fontFamily="serif-monospace"
-        android:textStyle="bold"
-        android:textColor="@color/black"/>
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/createanewaccount"
-        android:layout_below="@id/forgotpassword"
+        android:layout_below="@id/loginbutton"
         android:text="Create a new account"
         android:clickable="true"
         android:layout_centerHorizontal="true"
