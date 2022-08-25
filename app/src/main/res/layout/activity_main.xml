@@ -38,14 +38,14 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:background="#30000000"
-        android:fontFamily="serif-monospace"
-        android:textStyle="bold"
         android:drawableLeft="@drawable/ic_baseline_person_24"
         android:drawablePadding="20dp"
-        android:hint="Enter Username"
+        android:fontFamily="serif-monospace"
+        android:hint="Enter Email Id"
         android:padding="20dp"
         android:textColor="@color/black"
-        android:textColorHint="@color/black" />
+        android:textColorHint="@color/black"
+        android:textStyle="bold" />
 
     <EditText
         android:layout_width="match_parent"
