@@ -2,6 +2,13 @@
 This is an Android Application connected to Firebase used to fill Survey forms. 
 It has a Registration page, login page, survey form and a confirmation page.
 
+Demo video
+
+
+https://user-images.githubusercontent.com/60285499/186716346-85aca86d-e306-489a-86b9-3efd2b17bbd2.mp4
+
+
+
 Page 1: Sign Up 
 The user can create a account here
 ![signup](https://user-images.githubusercontent.com/60285499/186341568-5990c3a5-6599-4a07-b2bf-1330aabde53a.png)
